@@ -26,6 +26,8 @@
   				background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);}
   			nav a {text-decoration: none; color: black; cursor: pointer; font-size: 0.8rem; font-weight: ;
   				}
+
+  			video {margin: 0 auto}
 			h1 {font-size: 1.2rem; line-height: 1.4}
 			h2 {font-size: 2rem; line-height: 1.3; padding-bottom: 30px}
 			h3 {font-size: 1.6rem; line-height: 1.4: max-width: 500px}
@@ -53,7 +55,9 @@
 
 			.h2-sub {font-size: 0.9rem; font-weight: 800}
 			.about-wrap {max-height: 900px}
-			.eze-wrap {display: flex; justify-content: center; align-items: center; text-align: center; line-height: 1.3}
+			.eze-wrap {display: flex; justify-content: center; align-items: center; text-align: center; line-height: 1.3; overflow: hidden;}
+
+			.bg-video {position: absolute; top: 0; left: 0;width: 100%; height: 100%; object-fit: cover;        z-index: -1;}
 
 			.kit-wrap {width: 100%; overflow: hidden;}
 			.kit-content {padding: 40px; width: 100%;}
@@ -127,12 +131,15 @@
 			<p style="padding-bottom: 300px;">현수많은 리서치와 실제 피드백을 기반으로, 귀사가 보유한 독자적인 기술력과 사용자 중심 설계를 결합하여, 당당한 발표를 위한 PRESENTATION MASTER KIT를 개발 했습니다. PRESENTATION MASTER KIT는 독자적인 기술력을 통해 발표를 두려워하는 모든 이들에게 혁신적인 솔루션을 제공하며 보다 성공적인 발표 경험을 지원합니다. <br>&nbsp;<br>PT KIT가 여러분의 발표를 든든하게 서포트 합니다.</p>
 		</div>
 	</section>
-	<section style="background-image: url(eze.mp4); height: 900px;">
+	<section style="height: 900px; overflow: hidden; position: relative;">
+		<video autoplay muted loop playsinline class="bg-video" style="z-index: -1;">
+    	<source src="eze.mp4" type="video/mp4">
+  		</video>
 		<div class="eze-wrap" style="height: 900px; width: 100%;">
 			<p style="font-size: 4.2rem; font-weight: 700; max-width: 1100px; color: white;">이제,<br>떨지말고 말하세요!</p>
 		</div>
 	</section>
-		<div style="height: 900px"></div>
+		<div style="height: 900px; over"></div>
 	<section>
 		<div class="kit-wrap">
 		<div class="wrap">
